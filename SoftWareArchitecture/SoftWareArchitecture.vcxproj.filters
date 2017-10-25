@@ -16,6 +16,9 @@
     <Filter Include="源文件\model">
       <UniqueIdentifier>{30341e98-0555-42c4-97c9-51de1ac7d138}</UniqueIdentifier>
     </Filter>
+    <Filter Include="源文件\view">
+      <UniqueIdentifier>{6336d128-1463-4474-bc32-459f146e0c69}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
