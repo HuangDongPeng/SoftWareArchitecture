@@ -186,13 +186,18 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Passenger.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="SoftWareArchitecture.h" />
     <ClInclude Include="SoftWareArchitectureDlg.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
+    <ClInclude Include="Ticket.h" />
+    <ClInclude Include="Train.h" />
+    <ClInclude Include="User.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Passenger.cpp" />
     <ClCompile Include="SoftWareArchitecture.cpp" />
     <ClCompile Include="SoftWareArchitectureDlg.cpp" />
     <ClCompile Include="stdafx.cpp">
@@ -201,6 +206,9 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="Ticket.cpp" />
+    <ClCompile Include="Train.cpp" />
+    <ClCompile Include="User.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="SoftWareArchitecture.rc" />

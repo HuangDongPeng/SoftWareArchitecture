@@ -13,6 +13,9 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="源文件\model">
+      <UniqueIdentifier>{30341e98-0555-42c4-97c9-51de1ac7d138}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -33,6 +36,18 @@
     <ClInclude Include="Resource.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="User.h">
+      <Filter>源文件\model</Filter>
+    </ClInclude>
+    <ClInclude Include="Passenger.h">
+      <Filter>源文件\model</Filter>
+    </ClInclude>
+    <ClInclude Include="Ticket.h">
+      <Filter>源文件\model</Filter>
+    </ClInclude>
+    <ClInclude Include="Train.h">
+      <Filter>源文件\model</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="SoftWareArchitecture.cpp">
@@ -43,6 +58,18 @@
     </ClCompile>
     <ClCompile Include="stdafx.cpp">
       <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="User.cpp">
+      <Filter>源文件\model</Filter>
+    </ClCompile>
+    <ClCompile Include="Passenger.cpp">
+      <Filter>源文件\model</Filter>
+    </ClCompile>
+    <ClCompile Include="Ticket.cpp">
+      <Filter>源文件\model</Filter>
+    </ClCompile>
+    <ClCompile Include="Train.cpp">
+      <Filter>源文件\model</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
