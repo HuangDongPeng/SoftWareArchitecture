@@ -60,6 +60,12 @@
     <ClInclude Include="UserDA.h">
       <Filter>源文件\DataAccessLayer</Filter>
     </ClInclude>
+    <ClInclude Include="UserController.h">
+      <Filter>源文件\BussinessLogicLayer</Filter>
+    </ClInclude>
+    <ClInclude Include="SignUpDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="SoftWareArchitecture.cpp">
@@ -85,6 +91,12 @@
     </ClCompile>
     <ClCompile Include="UserDA.cpp">
       <Filter>源文件\DataAccessLayer</Filter>
+    </ClCompile>
+    <ClCompile Include="UserController.cpp">
+      <Filter>源文件\BussinessLogicLayer</Filter>
+    </ClCompile>
+    <ClCompile Include="SignUpDlg.cpp">
+      <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

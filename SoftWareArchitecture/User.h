@@ -1,4 +1,6 @@
-//”√ªß¿‡
+#ifndef USER_H
+#define USER_H
+
 #include <vector>
 #include "Passenger.h"
 #include "Ticket.h"
@@ -6,6 +8,7 @@ using namespace std;
 class User
 {
 private:
+	CString username;
 	CString name;
 	CString password;
 	CString idCard;
@@ -15,8 +18,9 @@ private:
 
 public:
 	User();
-	User(CString name, CString password, CString idCard, CString tel);
+	User(CString username, CString password, CString name, CString idCard, CString tel);
 	~User();
+	CString getUsername(){ return username; };
 	CString getName() { return name; };
 	CString getPassword() { return password; };
 	CString getIdCard() { return idCard;};
@@ -31,3 +35,4 @@ public:
 	bool refundATicket(int index);
 };
 
+#endif

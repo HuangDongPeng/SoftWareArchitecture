@@ -66,6 +66,7 @@ BEGIN_MESSAGE_MAP(CSoftWareArchitectureDlg, CDialogEx)
 	ON_WM_SYSCOMMAND()
 	ON_WM_PAINT()
 	ON_WM_QUERYDRAGICON()
+	ON_BN_CLICKED(IDC_SIBUTTON, &CSoftWareArchitectureDlg::OnBnClickedSibutton)
 END_MESSAGE_MAP()
 
 
@@ -154,3 +155,12 @@ HCURSOR CSoftWareArchitectureDlg::OnQueryDragIcon()
 	return static_cast<HCURSOR>(m_hIcon);
 }
 
+
+
+void CSoftWareArchitectureDlg::OnBnClickedSibutton()//用户注册
+{
+	// TODO: 在此添加控件通知处理程序代码
+	INT_PTR nRes;             // 用于保存DoModal函数的返回值   
+	CSignUpDlg hDlg;           // 构造对话框类CTipDlg的实例   
+	nRes = hDlg.DoModal();  // 弹出对话框
+}

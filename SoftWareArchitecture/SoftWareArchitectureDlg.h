@@ -2,7 +2,7 @@
 // SoftWareArchitectureDlg.h : 头文件
 //
 
-#pragma once
+#include "SignUpDlg.h"
 
 
 // CSoftWareArchitectureDlg 对话框
@@ -31,4 +31,6 @@ protected:
 	afx_msg void OnPaint();
 	afx_msg HCURSOR OnQueryDragIcon();
 	DECLARE_MESSAGE_MAP()
+public:
+	afx_msg void OnBnClickedSibutton();
 };

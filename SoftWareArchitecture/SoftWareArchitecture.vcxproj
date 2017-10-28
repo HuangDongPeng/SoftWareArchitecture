@@ -166,6 +166,7 @@
       <PreprocessorDefinitions>_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
       <AdditionalIncludeDirectories>C:\local\boost_1_64_0;C:\Program Files\MySQL\MySQL Server 5.7\include;C:\Program Files\MySQL\MySQL Connector C++ 1.1.9\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -191,6 +192,7 @@
   <ItemGroup>
     <ClInclude Include="Passenger.h" />
     <ClInclude Include="Resource.h" />
+    <ClInclude Include="SignUpDlg.h" />
     <ClInclude Include="SoftWareArchitecture.h" />
     <ClInclude Include="SoftWareArchitectureDlg.h" />
     <ClInclude Include="stdafx.h" />
@@ -198,10 +200,12 @@
     <ClInclude Include="Ticket.h" />
     <ClInclude Include="Train.h" />
     <ClInclude Include="User.h" />
+    <ClInclude Include="UserController.h" />
     <ClInclude Include="UserDA.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Passenger.cpp" />
+    <ClCompile Include="SignUpDlg.cpp" />
     <ClCompile Include="SoftWareArchitecture.cpp" />
     <ClCompile Include="SoftWareArchitectureDlg.cpp" />
     <ClCompile Include="stdafx.cpp">
@@ -213,6 +217,7 @@
     <ClCompile Include="Ticket.cpp" />
     <ClCompile Include="Train.cpp" />
     <ClCompile Include="User.cpp" />
+    <ClCompile Include="UserController.cpp" />
     <ClCompile Include="UserDA.cpp" />
   </ItemGroup>
   <ItemGroup>

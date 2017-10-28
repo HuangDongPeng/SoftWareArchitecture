@@ -1,7 +1,8 @@
+#ifndef USERDA_H
+#define USERDA_H
+
 #include <iostream>
-#include <map>
 #include <string>
-#include <memory>
 #include "mysql_driver.h"
 #include "mysql_connection.h"
 #include "cppconn/driver.h"
@@ -14,18 +15,21 @@ using namespace sql;
 using namespace std;
 class UserDA
 {
-	static User aUser;
+private:
+	static User UserDA::aUser;
 	static sql::mysql::MySQL_Driver *driver;
-	static sql::Connection *conn;
+	static Connection *conn;
 	static sql::Statement* stat;
-	static CString name, password, idCard, tel;
+	static CString name, password, idCard, tel, username;
 public:
 	static Connection *initialize();
 	static void terminate();
 	static void addAUser(User aUser);
 	static void deleteAUser(CString idCard);
 	static void update(User aUser);
+	static User find(CString idCard);
 	UserDA();
 	~UserDA();
 };
 
+#endif

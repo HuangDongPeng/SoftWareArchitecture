@@ -6,8 +6,8 @@ User::User()
 {
 }
 
-User::User(CString name, CString password, CString idCard, CString tel) :
-	name(name), password(password), idCard(idCard), tel(tel)
+User::User(CString username, CString password, CString name, CString idCard, CString tel) :
+	name(name), password(password), idCard(idCard), tel(tel),username(username)
 {
 }
 
