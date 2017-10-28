@@ -50,9 +50,7 @@ void CSignUpDlg::OnBnClickedCommitbton()
 	// TODO: 在此添加控件通知处理程序代码
 	UpdateData(true);
 	UserController userController = UserController();
-	//USES_CONVERSION;
-	//string username(W2A(m_username)), password(W2A(m_password)), name(W2A(m_name)), idcard(W2A(m_idCard)), tel(W2A(m_tel));
-	//User aUser = User(username, password, username, idcard, tel);
-	//userController.addAUser(aUser);
+	User aUser = User(m_username, m_password, m_username, m_idCard, m_tel);
+	userController.addAUser(aUser);
 	MessageBox(_T("111"));
 }

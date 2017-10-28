@@ -4,7 +4,7 @@
 
 void UserController::addAUser(User aUser)
 {
-	//UserDA::addAUser(aUser);
+	UserDA::addAUser(aUser);
 }
 
 UserController::UserController()

@@ -64,13 +64,10 @@
       <Filter>源文件\BussinessLogicLayer</Filter>
     </ClInclude>
     <ClInclude Include="SignUpDlg.h">
-      <Filter>头文件</Filter>
+      <Filter>源文件\UserShowLayer</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="SoftWareArchitecture.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="SoftWareArchitectureDlg.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
@@ -96,6 +93,9 @@
       <Filter>源文件\BussinessLogicLayer</Filter>
     </ClCompile>
     <ClCompile Include="SignUpDlg.cpp">
+      <Filter>源文件\UserShowLayer</Filter>
+    </ClCompile>
+    <ClCompile Include="SoftWareArchitecture.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
