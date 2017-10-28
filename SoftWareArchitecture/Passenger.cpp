@@ -4,7 +4,7 @@ Passenger::Passenger()
 {
 }
 
-Passenger::Passenger(CString name, CString idCard, type pType, CString studentCard= _T(""), CString collegeName= _T(""), CString grade= _T("")) :
+Passenger::Passenger(CString name, CString idCard, type pType, CString studentCard, CString collegeName, CString grade) :
 	name(name), idCard(idCard), pType(pType), studentCard(studentCard), collegeName(collegeName), grade(grade)
 {
 

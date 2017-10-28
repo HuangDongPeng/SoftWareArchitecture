@@ -13,10 +13,16 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="源文件\model">
+    <Filter Include="源文件\Entity">
       <UniqueIdentifier>{30341e98-0555-42c4-97c9-51de1ac7d138}</UniqueIdentifier>
     </Filter>
-    <Filter Include="源文件\view">
+    <Filter Include="源文件\BussinessLogicLayer">
+      <UniqueIdentifier>{330ffe59-6183-4ff4-af55-2e83bccc0e13}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\DataAccessLayer">
+      <UniqueIdentifier>{79d5c00b-1a73-4ebd-bb40-f3fe6fed6453}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\UserShowLayer">
       <UniqueIdentifier>{6336d128-1463-4474-bc32-459f146e0c69}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
@@ -40,16 +46,19 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="User.h">
-      <Filter>源文件\model</Filter>
+      <Filter>源文件\Entity</Filter>
     </ClInclude>
     <ClInclude Include="Passenger.h">
-      <Filter>源文件\model</Filter>
+      <Filter>源文件\Entity</Filter>
     </ClInclude>
     <ClInclude Include="Ticket.h">
-      <Filter>源文件\model</Filter>
+      <Filter>源文件\Entity</Filter>
     </ClInclude>
     <ClInclude Include="Train.h">
-      <Filter>源文件\model</Filter>
+      <Filter>源文件\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="UserDA.h">
+      <Filter>源文件\DataAccessLayer</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -63,16 +72,19 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="User.cpp">
-      <Filter>源文件\model</Filter>
+      <Filter>源文件\Entity</Filter>
     </ClCompile>
     <ClCompile Include="Passenger.cpp">
-      <Filter>源文件\model</Filter>
+      <Filter>源文件\Entity</Filter>
     </ClCompile>
     <ClCompile Include="Ticket.cpp">
-      <Filter>源文件\model</Filter>
+      <Filter>源文件\Entity</Filter>
     </ClCompile>
     <ClCompile Include="Train.cpp">
-      <Filter>源文件\model</Filter>
+      <Filter>源文件\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="UserDA.cpp">
+      <Filter>源文件\DataAccessLayer</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
