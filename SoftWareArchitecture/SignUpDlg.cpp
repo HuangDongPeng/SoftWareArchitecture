@@ -41,6 +41,7 @@ BEGIN_MESSAGE_MAP(CSignUpDlg, CDialogEx)
 	ON_BN_CLICKED(IDC_COMMITBTON, &CSignUpDlg::OnBnClickedCommitbton)
 	ON_EN_CHANGE(IDC_SUPASSWORD, &CSignUpDlg::OnEnChangeSupassword)
 	ON_BN_CLICKED(IDC_BUTTONGETSMS, &CSignUpDlg::OnBnClickedSMS)
+	ON_WM_TIMER()
 END_MESSAGE_MAP()
 
 
@@ -70,7 +71,14 @@ void CSignUpDlg::OnBnClickedCommitbton()
 	}
 	
 	User aUser = User(m_username, m_password, m_username, m_idCard, m_tel);
-	userController.addAUser(aUser);
+	try {
+		userController.addAUser(aUser);
+	}
+	catch (...) {
+		AfxMessageBox(_T("该用户名已被注册"));
+		return;
+	}
+	AfxMessageBox(_T("注册成功，请重新登录"));
 	CDialog::OnOK();
 }
 
@@ -126,3 +134,18 @@ void CSignUpDlg::OnBnClickedSMS()
 //		KillTimer(0);
 //	}
 //}
+
+void CSignUpDlg::OnTimer(UINT_PTR nIDEvent)
+{
+	// TODO: 在此添加消息处理程序代码和/或调用默认值
+	CString a;
+	a.Format(_T("%d秒后重新发送"), timecount);
+	GetDlgItem(IDC_BUTTONGETSMS)->SetWindowText(a);
+	if (--timecount == 0) {
+		GetDlgItem(IDC_BUTTONGETSMS)->EnableWindow(true);
+		GetDlgItem(IDC_BUTTONGETSMS)->SetWindowText(_T("获取验证码"));
+		timecount = 60;
+		KillTimer(0);
+	}
+	CDialogEx::OnTimer(nIDEvent);
+}

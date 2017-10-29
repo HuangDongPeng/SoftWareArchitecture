@@ -190,6 +190,7 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="ConfirmOrderDlg.h" />
     <ClInclude Include="InquiryDlg.h" />
     <ClInclude Include="OrderController.h" />
     <ClInclude Include="OrderDA.h" />
@@ -211,6 +212,7 @@
     <ClInclude Include="UserDA.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="ConfirmOrderDlg.cpp" />
     <ClCompile Include="InquiryDlg.cpp" />
     <ClCompile Include="OrderController.cpp" />
     <ClCompile Include="OrderDA.cpp" />

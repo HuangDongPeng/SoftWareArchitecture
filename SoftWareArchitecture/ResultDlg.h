@@ -1,6 +1,6 @@
 #pragma once
 #include "afxcmn.h"
-
+#include "ConfirmOrderDlg.h"
 
 // CResultDlg ¶Ô»°¿ò
 
@@ -25,4 +25,6 @@ protected:
 	DECLARE_MESSAGE_MAP()
 public:
 	CListCtrl m_result;
+	afx_msg void OnBnClickedBack();
+	afx_msg void OnBnClickedBuy();
 };

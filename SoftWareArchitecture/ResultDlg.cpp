@@ -64,7 +64,24 @@ void CResultDlg::DoDataExchange(CDataExchange* pDX)
 
 
 BEGIN_MESSAGE_MAP(CResultDlg, CDialogEx)
+	ON_BN_CLICKED(IDC_BACK, &CResultDlg::OnBnClickedBack)
+	ON_BN_CLICKED(IDC_BUY, &CResultDlg::OnBnClickedBuy)
 END_MESSAGE_MAP()
 
 
 // CResultDlg 消息处理程序
+
+
+void CResultDlg::OnBnClickedBack()
+{
+	// TODO: 在此添加控件通知处理程序代码
+	CDialogEx::OnOK();
+}
+
+
+void CResultDlg::OnBnClickedBuy()
+{
+	// TODO: 在此添加控件通知处理程序代码
+	CConfirmOrderDlg hDlg;           // 构造对话框类CTipDlg的实例 
+	hDlg.DoModal();  // 弹出对话框
+}

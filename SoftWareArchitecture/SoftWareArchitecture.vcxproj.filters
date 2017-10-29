@@ -87,6 +87,9 @@
     <ClInclude Include="PassengerController.h">
       <Filter>源文件\BussinessLogicLayer</Filter>
     </ClInclude>
+    <ClInclude Include="ConfirmOrderDlg.h">
+      <Filter>源文件\UserShowLayer</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="SoftWareArchitectureDlg.cpp">
@@ -139,6 +142,9 @@
     </ClCompile>
     <ClCompile Include="PassengerController.cpp">
       <Filter>源文件\BussinessLogicLayer</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfirmOrderDlg.cpp">
+      <Filter>源文件\UserShowLayer</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

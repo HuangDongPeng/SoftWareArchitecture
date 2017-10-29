@@ -26,5 +26,6 @@ public:
 	afx_msg void OnBnClickedCommitbton();
 	afx_msg void OnEnChangeSupassword();
 	afx_msg void OnBnClickedSMS();
-	void OnTimer(UINT_PTR nIDEvent);
+	//void OnTimer(UINT_PTR nIDEvent);
+	afx_msg void OnTimer(UINT_PTR nIDEvent);
 };
