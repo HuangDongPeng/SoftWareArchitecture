@@ -3,7 +3,7 @@
 //
 
 #include "SignUpDlg.h"
-
+#include "SignInDlg.h"
 
 // CSoftWareArchitectureDlg ¶Ô»°¿ò
 class CSoftWareArchitectureDlg : public CDialogEx
@@ -33,4 +33,5 @@ protected:
 	DECLARE_MESSAGE_MAP()
 public:
 	afx_msg void OnBnClickedSibutton();
+	afx_msg void OnClickedSubutton();
 };

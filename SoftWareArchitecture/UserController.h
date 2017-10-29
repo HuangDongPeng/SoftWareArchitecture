@@ -8,6 +8,7 @@ class UserController
 {
 public:
 	void addAUser(User aUser);
+	bool signIn(CString username, CString password);
 	UserController();
 	~UserController();
 };

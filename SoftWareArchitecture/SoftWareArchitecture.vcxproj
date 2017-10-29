@@ -53,7 +53,7 @@
     <UseDebugLibraries>false</UseDebugLibraries>
     <PlatformToolset>v141</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
-    <CharacterSet>NotSet</CharacterSet>
+    <CharacterSet>Unicode</CharacterSet>
     <UseOfMfc>Dynamic</UseOfMfc>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
@@ -190,8 +190,10 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="InquiryDlg.h" />
     <ClInclude Include="Passenger.h" />
     <ClInclude Include="Resource.h" />
+    <ClInclude Include="ResultDlg.h" />
     <ClInclude Include="SignInDlg.h" />
     <ClInclude Include="SignUpDlg.h" />
     <ClInclude Include="SoftWareArchitecture.h" />
@@ -205,7 +207,9 @@
     <ClInclude Include="UserDA.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="InquiryDlg.cpp" />
     <ClCompile Include="Passenger.cpp" />
+    <ClCompile Include="ResultDlg.cpp" />
     <ClCompile Include="SignInDlg.cpp" />
     <ClCompile Include="SignUpDlg.cpp" />
     <ClCompile Include="SoftWareArchitecture.cpp" />
@@ -229,6 +233,8 @@
     <None Include="res\SoftWareArchitecture.rc2" />
   </ItemGroup>
   <ItemGroup>
+    <Image Include="res\1.ico" />
+    <Image Include="res\genimage.bmp" />
     <Image Include="res\SoftWareArchitecture.ico" />
     <Image Include="res\timg.bmp" />
   </ItemGroup>

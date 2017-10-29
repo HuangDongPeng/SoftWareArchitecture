@@ -52,25 +52,24 @@ void CSignUpDlg::OnBnClickedCommitbton()
 	UpdateData(true);
 	UserController userController = UserController();
 	if (m_username.IsEmpty()) {
-		MessageBox("用户名不能为空");
+		AfxMessageBox(_T("用户名不能为空"));
 		return;
 	}
 	else if (m_password.GetLength() < 6 || m_password.GetLength() > 16) {
-		MessageBox("密码需6-16位");
+		AfxMessageBox(_T("密码需6-16位"));
 		return;
 	}
 	else if (m_idCard.GetLength() != 18) {
-		MessageBox("请输入正确的身份证号码");
+		AfxMessageBox(_T("请输入正确的身份证号码"));
 		return;
 	}
 	else if (m_tel.GetLength() != 11) {
-		MessageBox("请输入正确的手机号");
+		AfxMessageBox(_T("请输入正确的手机号"));
 		return;
 	}
 	
 	User aUser = User(m_username, m_password, m_username, m_idCard, m_tel);
 	userController.addAUser(aUser);
-	MessageBox(_T("111"));
 	CDialog::OnOK();
 }
 
@@ -93,7 +92,8 @@ void CSignUpDlg::OnEnChangeSupassword()
 	// 同时将 ENM_CHANGE 标志“或”运算到掩码中。
 	UpdateData(true);
 	GetDlgItem(IDC_PWSTRENGTH)->ShowWindow(SW_SHOW);
-	string password = m_password;
+	USES_CONVERSION;
+	std::string password(W2A(m_password));
 	if (password.length() >= 6 && password.length() <= 16) {
 		switch (fun(password))
 		{
@@ -103,6 +103,5 @@ void CSignUpDlg::OnEnChangeSupassword()
 		case 4:SetDlgItemText(IDC_PWSTRENGTH, _T("密码强度：很强")); break;
 		}
 	}
-	// TODO:  在此添加控件通知处理程序代码
 }
 

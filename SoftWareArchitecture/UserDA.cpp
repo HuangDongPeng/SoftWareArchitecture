@@ -30,9 +30,15 @@ void UserDA::addAUser(User aUser)
 	stat = conn->createStatement();
 	stat->execute("set names 'gbk'");
 	stat->execute("USE ticketsystem");
+	USES_CONVERSION;
+	std::string strusername(W2A(username));
+	std::string strname(W2A(name));
+	std::string strpassword(W2A(password));
+	std::string stridcard(W2A(idCard));
+	std::string strtel(W2A(tel));
 	string sql;
 	//sprintf(sql, "INSERT INTO usertable (username,password,name,tel,idCard) values (%s,%s,%s,%s)", username,password,name,tel,idCard);
-	sql = "INSERT INTO usertable (username,password,name,tel,idCard) values ('" + username + "','" + password + "','" + name + "','" + idCard + "','" + tel + "') ";
+	sql = "INSERT INTO usertable (username,password,name,tel,idCard) values ('" + strusername + "','" + strpassword + "','" + strname + "','" + stridcard + "','" + strtel + "') ";
 	stat->executeUpdate(sql);
 	UserDA::terminate();
 }
@@ -64,27 +70,33 @@ void UserDA::addAUser(User aUser)
 //	UserDA::terminate();
 //}
 //
-//User UserDA::find(CString username)
-//{
-//	UserDA::initialize();
-//	stat = conn->createStatement();
-//	stat->execute("set names 'gbk'");
-//	stat->execute("USE ticketsystem");
-//	char *sql;
-//	//sprintf(sql, "SELECT username,password,name,tel,idcard FROM usertable WHERE username = %s", (char *)username.GetBuffer(0));
-//	ResultSet *rs = stat->executeQuery(sql);
-//	bool getIt = rs->next();
-//	if (getIt) {
-//		username = (string)(rs->getString(1));
-//		password = (string)(rs->getString(2));
-//		name = (string)(rs->getString(3));
-//		idCard = (string)(rs->getString(4));
-//		tel = (string)(rs->getString(5));
-//	}
-//	rs->close();
-//	UserDA::terminate();
-//	return User(username,password,name,idCard,tel);
-//}
+User UserDA::find(CString username)
+{
+	UserDA::initialize();
+	stat = conn->createStatement();
+	stat->execute("set names 'gbk'");
+	stat->execute("USE ticketsystem");
+	USES_CONVERSION;
+	std::string strusername(W2A(username));
+	string sql;
+	sql = "SELECT username,password,name,tel,idcard FROM usertable WHERE username = '" + strusername + "'";
+	ResultSet *rs = stat->executeQuery(sql);
+	bool getIt = rs->next();
+	if (getIt) {
+		username = (CString)(rs->getString(1).c_str());
+		password = (CString)(rs->getString(2).c_str());
+		name = (CString)(rs->getString(3).c_str());
+		idCard = (CString)(rs->getString(4).c_str());
+		tel = (CString)(rs->getString(5).c_str());
+	}
+	else {
+		//AfxMessageBox(_T("ÓÃ»§ÃûÃÜÂë´íÎó"));
+		return User();
+	}
+	rs->close();
+	UserDA::terminate();
+	return User(username,password,name,idCard,tel);
+}
 
 UserDA::UserDA()
 {

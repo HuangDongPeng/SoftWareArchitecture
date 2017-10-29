@@ -10,6 +10,10 @@
 #define IDD_SUDIALOG                    130
 #define IDD_SIDIALOG                    132
 #define IDB_BITMAP1                     134
+#define IDD_DIALOG1                     135
+#define IDD_TRAINDIALOG                 135
+#define IDB_BITMAP2                     137
+#define IDD_INQUIRYDIALOG               138
 #define IDC_IMG_FIRSTPAGE               1000
 #define IDC_SUBUTTON                    1001
 #define IDC_SIBUTTON                    1002
@@ -26,14 +30,25 @@
 #define IDC_SIYZM                       1016
 #define IDC_SIGNINBTON                  1017
 #define IDC_PWSTRENGTH                  1018
+#define IDC_STATICPIN                   1020
+#define IDC_BITMAPPIN                   1021
+#define IDC_ORIGIN                      1027
+#define IDC_DESTINATION                 1028
+#define IDC_DATETIMEPICKER1             1029
+#define IDC_DATETIMEPICKER2             1030
+#define IDC_RADIO1                      1031
+#define IDC_COMBO3                      1032
+#define IDC_QUERYBUTTON                 1033
+#define IDC_LIST1                       1034
+#define IDC_LIST2                       1035
 
 // Next default values for new objects
 // 
 #ifdef APSTUDIO_INVOKED
 #ifndef APSTUDIO_READONLY_SYMBOLS
-#define _APS_NEXT_RESOURCE_VALUE        135
+#define _APS_NEXT_RESOURCE_VALUE        141
 #define _APS_NEXT_COMMAND_VALUE         32771
-#define _APS_NEXT_CONTROL_VALUE         1019
+#define _APS_NEXT_CONTROL_VALUE         1036
 #define _APS_NEXT_SYMED_VALUE           101
 #endif
 #endif

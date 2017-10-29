@@ -1,8 +1,7 @@
-#pragma once
 #include "User.h"
 #include "UserDA.h"
 #include "UserController.h"
-
+#include "InquiryDlg.h"
 // CSignInDlg ¶Ô»°¿ò
 
 class CSignInDlg : public CDialogEx

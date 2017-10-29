@@ -69,6 +69,12 @@
     <ClInclude Include="SignInDlg.h">
       <Filter>源文件\UserShowLayer</Filter>
     </ClInclude>
+    <ClInclude Include="InquiryDlg.h">
+      <Filter>源文件\UserShowLayer</Filter>
+    </ClInclude>
+    <ClInclude Include="ResultDlg.h">
+      <Filter>源文件\UserShowLayer</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="SoftWareArchitectureDlg.cpp">
@@ -104,6 +110,12 @@
     <ClCompile Include="SignInDlg.cpp">
       <Filter>源文件\UserShowLayer</Filter>
     </ClCompile>
+    <ClCompile Include="InquiryDlg.cpp">
+      <Filter>源文件\UserShowLayer</Filter>
+    </ClCompile>
+    <ClCompile Include="ResultDlg.cpp">
+      <Filter>源文件\UserShowLayer</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="SoftWareArchitecture.rc">
@@ -120,6 +132,12 @@
       <Filter>资源文件</Filter>
     </Image>
     <Image Include="res\timg.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\genimage.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\1.ico">
       <Filter>资源文件</Filter>
     </Image>
   </ItemGroup>
