@@ -190,17 +190,22 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="AddAPassengerDlg.h" />
     <ClInclude Include="ConfirmOrderDlg.h" />
+    <ClInclude Include="HistoryOrderDlg.h" />
     <ClInclude Include="InquiryDlg.h" />
     <ClInclude Include="OrderController.h" />
     <ClInclude Include="OrderDA.h" />
     <ClInclude Include="Passenger.h" />
     <ClInclude Include="PassengerController.h" />
     <ClInclude Include="PassengerDA.h" />
+    <ClInclude Include="PayDlg.h" />
+    <ClInclude Include="PersonalInformationDlg.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="ResultDlg.h" />
     <ClInclude Include="SignInDlg.h" />
     <ClInclude Include="SignUpDlg.h" />
+    <ClInclude Include="SMSDlg.h" />
     <ClInclude Include="SoftWareArchitecture.h" />
     <ClInclude Include="SoftWareArchitectureDlg.h" />
     <ClInclude Include="stdafx.h" />
@@ -212,16 +217,21 @@
     <ClInclude Include="UserDA.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="AddAPassengerDlg.cpp" />
     <ClCompile Include="ConfirmOrderDlg.cpp" />
+    <ClCompile Include="HistoryOrderDlg.cpp" />
     <ClCompile Include="InquiryDlg.cpp" />
     <ClCompile Include="OrderController.cpp" />
     <ClCompile Include="OrderDA.cpp" />
     <ClCompile Include="Passenger.cpp" />
     <ClCompile Include="PassengerController.cpp" />
     <ClCompile Include="PassengerDA.cpp" />
+    <ClCompile Include="PayDlg.cpp" />
+    <ClCompile Include="PersonalInformationDlg.cpp" />
     <ClCompile Include="ResultDlg.cpp" />
     <ClCompile Include="SignInDlg.cpp" />
     <ClCompile Include="SignUpDlg.cpp" />
+    <ClCompile Include="SMSDlg.cpp" />
     <ClCompile Include="SoftWareArchitecture.cpp" />
     <ClCompile Include="SoftWareArchitectureDlg.cpp" />
     <ClCompile Include="stdafx.cpp">

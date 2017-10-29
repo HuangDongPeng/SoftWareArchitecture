@@ -1,6 +1,6 @@
 #include "stdafx.h"
 #include "User.h"
-
+#include "UserDA.h"
 
 User::User()
 {
@@ -44,4 +44,8 @@ bool User::updateATicket(Ticket & ticket, int index)
 bool User::refundATicket(int index)
 {
 	return false;
+}
+
+User User::getUser(CString username) {
+	return UserDA::find(username);
 }

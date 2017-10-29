@@ -70,9 +70,11 @@ void CSignInDlg::OnBnClickedSigninbton()
 	if (usercontroller.signIn(m_username, m_password))
 	{
 		INT_PTR nRes;             // 用于保存DoModal函数的返回值   
-		CInquiryDlg hDlg;           // 构造对话框类CTipDlg的实例 
-		CDialog::OnOK();
+		CInquiryDlg hDlg(m_username);           // 构造对话框类CTipDlg的实例 
+		//DestroyWindow();
+		CDialogEx::OnOK();
 		nRes = hDlg.DoModal();  // 弹出对话框
+		trycount = 0;
 	}
 	else 
 		AfxMessageBox(_T("用户名密码不匹配"));

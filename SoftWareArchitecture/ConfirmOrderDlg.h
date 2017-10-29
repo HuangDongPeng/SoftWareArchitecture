@@ -1,5 +1,6 @@
-#pragma once
-
+#include "AddAPassengerDlg.h"
+#include "afxcmn.h"
+#include "PayDlg.h"
 
 // CConfirmOrderDlg 对话框
 
@@ -20,4 +21,9 @@ protected:
 	virtual void DoDataExchange(CDataExchange* pDX);    // DDX/DDV 支持
 
 	DECLARE_MESSAGE_MAP()
+public:
+	afx_msg void OnBnClickedButtonaddApassenger();
+	CListCtrl m_newpassenger;
+	afx_msg void OnBnClickedButtonconcel();
+	afx_msg void OnBnClickedButtonCommitOrder();
 };

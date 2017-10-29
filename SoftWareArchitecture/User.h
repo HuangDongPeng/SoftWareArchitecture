@@ -4,6 +4,7 @@
 #include <vector>
 #include "Passenger.h"
 #include "Ticket.h"
+//#include "UserDA.h"
 using namespace std;
 class User
 {
@@ -33,6 +34,7 @@ public:
 	bool buyATicket(Ticket &ticket);
 	bool updateATicket(Ticket &ticket, int index);
 	bool refundATicket(int index);
+	static User getUser(CString username);
 };
 
 #endif

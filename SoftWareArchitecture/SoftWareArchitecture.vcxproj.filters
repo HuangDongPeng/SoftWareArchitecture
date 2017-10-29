@@ -90,6 +90,21 @@
     <ClInclude Include="ConfirmOrderDlg.h">
       <Filter>源文件\UserShowLayer</Filter>
     </ClInclude>
+    <ClInclude Include="AddAPassengerDlg.h">
+      <Filter>源文件\UserShowLayer</Filter>
+    </ClInclude>
+    <ClInclude Include="PayDlg.h">
+      <Filter>源文件\UserShowLayer</Filter>
+    </ClInclude>
+    <ClInclude Include="PersonalInformationDlg.h">
+      <Filter>源文件\UserShowLayer</Filter>
+    </ClInclude>
+    <ClInclude Include="SMSDlg.h">
+      <Filter>源文件\UserShowLayer</Filter>
+    </ClInclude>
+    <ClInclude Include="HistoryOrderDlg.h">
+      <Filter>源文件\UserShowLayer</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="SoftWareArchitectureDlg.cpp">
@@ -144,6 +159,21 @@
       <Filter>源文件\BussinessLogicLayer</Filter>
     </ClCompile>
     <ClCompile Include="ConfirmOrderDlg.cpp">
+      <Filter>源文件\UserShowLayer</Filter>
+    </ClCompile>
+    <ClCompile Include="AddAPassengerDlg.cpp">
+      <Filter>源文件\UserShowLayer</Filter>
+    </ClCompile>
+    <ClCompile Include="PayDlg.cpp">
+      <Filter>源文件\UserShowLayer</Filter>
+    </ClCompile>
+    <ClCompile Include="PersonalInformationDlg.cpp">
+      <Filter>源文件\UserShowLayer</Filter>
+    </ClCompile>
+    <ClCompile Include="SMSDlg.cpp">
+      <Filter>源文件\UserShowLayer</Filter>
+    </ClCompile>
+    <ClCompile Include="HistoryOrderDlg.cpp">
       <Filter>源文件\UserShowLayer</Filter>
     </ClCompile>
   </ItemGroup>

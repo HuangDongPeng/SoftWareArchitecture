@@ -90,7 +90,6 @@ int fun(string ps) {
 		else if (c&&isdigit(ps[i])) count++, c = 0;
 		else if (!islower(ps[i]) && !isupper(ps[i]) && !isdigit(ps[i])) count++;
 		return count;
-
 }
 
 void CSignUpDlg::OnEnChangeSupassword()
@@ -119,6 +118,7 @@ void CSignUpDlg::OnEnChangeSupassword()
 void CSignUpDlg::OnBnClickedSMS()
 {
 	// TODO: 在此添加控件通知处理程序代码
+	OnTimer(0);
 	SetTimer(0, 1000, NULL);
 	GetDlgItem(IDC_BUTTONGETSMS)->EnableWindow(false);
 }

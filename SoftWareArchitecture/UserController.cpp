@@ -25,3 +25,7 @@ UserController::UserController()
 UserController::~UserController()
 {
 }
+
+User UserController::getUser(CString username) {
+	return User::getUser(username);
+}

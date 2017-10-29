@@ -11,6 +11,7 @@ public:
 	bool signIn(CString username, CString password);
 	UserController();
 	~UserController();
+	User getUser(CString username);
 };
 
 

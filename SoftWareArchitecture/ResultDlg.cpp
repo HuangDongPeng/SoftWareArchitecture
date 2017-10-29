@@ -42,12 +42,12 @@ void CResultDlg::AddtoGrid()
 	m_result.DeleteAllItems();
 	m_result.InsertItem(0, _T(""));
 	//向列表视图控件中插入列
-	m_result.SetItemText(0, 0, _T("D3228"));
+	m_result.SetItemText(0, 0, _T("D5651"));
 	m_result.SetItemText(0, 1, _T("合肥"));
 	m_result.SetItemText(0, 2, _T("武汉"));
 	m_result.SetItemText(0, 3, _T("2017/10/30  8:00"));
 	m_result.SetItemText(0, 4, _T("2:30"));
-	m_result.SetItemText(0, 5, _T("207"));
+	m_result.SetItemText(0, 5, _T("100"));
 	m_result.SetItemText(0, 6, _T("100"));
 
 }
@@ -84,4 +84,5 @@ void CResultDlg::OnBnClickedBuy()
 	// TODO: 在此添加控件通知处理程序代码
 	CConfirmOrderDlg hDlg;           // 构造对话框类CTipDlg的实例 
 	hDlg.DoModal();  // 弹出对话框
+	CDialogEx::OnOK();
 }

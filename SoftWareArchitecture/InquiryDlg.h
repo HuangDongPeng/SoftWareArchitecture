@@ -1,4 +1,6 @@
 #include "ResultDlg.h"
+#include "PersonalInformationDlg.h"
+#include "HistoryOrderDlg.h"
 // CInquiryDlg 对话框
 
 class CInquiryDlg : public CDialogEx
@@ -6,7 +8,7 @@ class CInquiryDlg : public CDialogEx
 	DECLARE_DYNAMIC(CInquiryDlg)
 
 public:
-	CInquiryDlg(CWnd* pParent = NULL);   // 标准构造函数
+	CInquiryDlg(CString username, CWnd* pParent = NULL);   // 标准构造函数
 	virtual ~CInquiryDlg();
 
 // 对话框数据
@@ -20,4 +22,6 @@ protected:
 	DECLARE_MESSAGE_MAP()
 public:
 	afx_msg void OnBnClickedQuerybutton();
+	afx_msg void OnBnClickedButtonpi();
+	afx_msg void OnBnClickedButtonho();
 };
