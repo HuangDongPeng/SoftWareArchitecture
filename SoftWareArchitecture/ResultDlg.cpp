@@ -25,13 +25,13 @@ BOOL CResultDlg::OnInitDialog()
 	m_result.SetExtendedStyle(m_result.GetExtendedStyle() | LVS_EX_FULLROWSELECT | LVS_EX_GRIDLINES);
 
 	// 为列表视图控件添加三列   
-	m_result.InsertColumn(0, _T("车次"), LVCFMT_CENTER, rect.Width() / 3, 0);
-	m_result.InsertColumn(1, _T("起始站"), LVCFMT_CENTER, rect.Width() / 3, 1);
-	m_result.InsertColumn(2, _T("终点站"), LVCFMT_CENTER, rect.Width() / 3, 2);
-	m_result.InsertColumn(3, _T("时间"), LVCFMT_CENTER, rect.Width() / 3, 3);
-	m_result.InsertColumn(4, _T("历时"), LVCFMT_CENTER, rect.Width() / 3, 4);
-	m_result.InsertColumn(5, _T("票价"), LVCFMT_CENTER, rect.Width() / 3, 5);
-	m_result.InsertColumn(6, _T("余票"), LVCFMT_CENTER, rect.Width() / 3, 6);
+	m_result.InsertColumn(0, _T("车次"), LVCFMT_CENTER, rect.Width() / 7, 0);
+	m_result.InsertColumn(1, _T("起始站"), LVCFMT_CENTER, rect.Width() / 7, 1);
+	m_result.InsertColumn(2, _T("终点站"), LVCFMT_CENTER, rect.Width() / 7, 2);
+	m_result.InsertColumn(3, _T("时间"), LVCFMT_CENTER, rect.Width() / 7, 3);
+	m_result.InsertColumn(4, _T("历时"), LVCFMT_CENTER, rect.Width() / 7, 4);
+	m_result.InsertColumn(5, _T("票价"), LVCFMT_CENTER, rect.Width() / 7, 5);
+	m_result.InsertColumn(6, _T("余票"), LVCFMT_CENTER, rect.Width() / 7, 6);
 	AddtoGrid();
 	m_result.GetHeaderCtrl()->EnableWindow(0);
 	return TRUE;

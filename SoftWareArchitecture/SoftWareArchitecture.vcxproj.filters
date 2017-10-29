@@ -75,6 +75,18 @@
     <ClInclude Include="ResultDlg.h">
       <Filter>源文件\UserShowLayer</Filter>
     </ClInclude>
+    <ClInclude Include="PassengerDA.h">
+      <Filter>源文件\DataAccessLayer</Filter>
+    </ClInclude>
+    <ClInclude Include="OrderDA.h">
+      <Filter>源文件\DataAccessLayer</Filter>
+    </ClInclude>
+    <ClInclude Include="OrderController.h">
+      <Filter>源文件\BussinessLogicLayer</Filter>
+    </ClInclude>
+    <ClInclude Include="PassengerController.h">
+      <Filter>源文件\BussinessLogicLayer</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="SoftWareArchitectureDlg.cpp">
@@ -115,6 +127,18 @@
     </ClCompile>
     <ClCompile Include="ResultDlg.cpp">
       <Filter>源文件\UserShowLayer</Filter>
+    </ClCompile>
+    <ClCompile Include="PassengerDA.cpp">
+      <Filter>源文件\DataAccessLayer</Filter>
+    </ClCompile>
+    <ClCompile Include="OrderDA.cpp">
+      <Filter>源文件\DataAccessLayer</Filter>
+    </ClCompile>
+    <ClCompile Include="OrderController.cpp">
+      <Filter>源文件\BussinessLogicLayer</Filter>
+    </ClCompile>
+    <ClCompile Include="PassengerController.cpp">
+      <Filter>源文件\BussinessLogicLayer</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

@@ -191,7 +191,11 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="InquiryDlg.h" />
+    <ClInclude Include="OrderController.h" />
+    <ClInclude Include="OrderDA.h" />
     <ClInclude Include="Passenger.h" />
+    <ClInclude Include="PassengerController.h" />
+    <ClInclude Include="PassengerDA.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="ResultDlg.h" />
     <ClInclude Include="SignInDlg.h" />
@@ -208,7 +212,11 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="InquiryDlg.cpp" />
+    <ClCompile Include="OrderController.cpp" />
+    <ClCompile Include="OrderDA.cpp" />
     <ClCompile Include="Passenger.cpp" />
+    <ClCompile Include="PassengerController.cpp" />
+    <ClCompile Include="PassengerDA.cpp" />
     <ClCompile Include="ResultDlg.cpp" />
     <ClCompile Include="SignInDlg.cpp" />
     <ClCompile Include="SignUpDlg.cpp" />

@@ -39,6 +39,5 @@ void CInquiryDlg::OnBnClickedQuerybutton()
 {
 	// TODO: 在此添加控件通知处理程序代码
 	CResultDlg hDlg;           // 构造对话框类CTipDlg的实例 
-	CDialog::OnOK();
 	hDlg.DoModal();  // 弹出对话框
 }

@@ -8,7 +8,7 @@
 
 
 // CSignUpDlg 对话框
-
+int timecount = 60;
 IMPLEMENT_DYNAMIC(CSignUpDlg, CDialogEx)
 
 CSignUpDlg::CSignUpDlg(CWnd* pParent /*=NULL*/)
@@ -40,6 +40,7 @@ void CSignUpDlg::DoDataExchange(CDataExchange* pDX)
 BEGIN_MESSAGE_MAP(CSignUpDlg, CDialogEx)
 	ON_BN_CLICKED(IDC_COMMITBTON, &CSignUpDlg::OnBnClickedCommitbton)
 	ON_EN_CHANGE(IDC_SUPASSWORD, &CSignUpDlg::OnEnChangeSupassword)
+	ON_BN_CLICKED(IDC_BUTTONGETSMS, &CSignUpDlg::OnBnClickedSMS)
 END_MESSAGE_MAP()
 
 
@@ -105,3 +106,23 @@ void CSignUpDlg::OnEnChangeSupassword()
 	}
 }
 
+
+
+void CSignUpDlg::OnBnClickedSMS()
+{
+	// TODO: 在此添加控件通知处理程序代码
+	SetTimer(0, 1000, NULL);
+	GetDlgItem(IDC_BUTTONGETSMS)->EnableWindow(false);
+}
+
+//void CSignUpDlg::OnTimer(UINT_PTR nIDEvent) {
+//	CString a;
+//	a.Format(_T("%d"), timecount);
+//	GetDlgItem(IDC_BUTTONGETSMS)->SetWindowText(a);
+//	if (--timecount == 0) {
+//		GetDlgItem(IDC_BUTTONGETSMS)->EnableWindow(true);
+//		GetDlgItem(IDC_BUTTONGETSMS)->SetWindowText(_T("获取验证码"));
+//		timecount = 60;
+//		KillTimer(0);
+//	}
+//}

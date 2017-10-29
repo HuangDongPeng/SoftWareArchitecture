@@ -25,4 +25,6 @@ public:
 	CString m_tel;
 	afx_msg void OnBnClickedCommitbton();
 	afx_msg void OnEnChangeSupassword();
+	afx_msg void OnBnClickedSMS();
+	void OnTimer(UINT_PTR nIDEvent);
 };
