@@ -24,4 +24,5 @@ public:
 	CString m_idCard;
 	CString m_tel;
 	afx_msg void OnBnClickedCommitbton();
+	afx_msg void OnEnChangeSupassword();
 };

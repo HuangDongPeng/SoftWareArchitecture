@@ -163,5 +163,4 @@ void CSoftWareArchitectureDlg::OnBnClickedSibutton()//用户注册
 	INT_PTR nRes;             // 用于保存DoModal函数的返回值   
 	CSignUpDlg hDlg;           // 构造对话框类CTipDlg的实例   
 	nRes = hDlg.DoModal();  // 弹出对话框
-	return;
 }

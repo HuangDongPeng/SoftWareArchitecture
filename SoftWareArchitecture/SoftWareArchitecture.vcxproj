@@ -192,6 +192,7 @@
   <ItemGroup>
     <ClInclude Include="Passenger.h" />
     <ClInclude Include="Resource.h" />
+    <ClInclude Include="SignInDlg.h" />
     <ClInclude Include="SignUpDlg.h" />
     <ClInclude Include="SoftWareArchitecture.h" />
     <ClInclude Include="SoftWareArchitectureDlg.h" />
@@ -205,6 +206,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Passenger.cpp" />
+    <ClCompile Include="SignInDlg.cpp" />
     <ClCompile Include="SignUpDlg.cpp" />
     <ClCompile Include="SoftWareArchitecture.cpp" />
     <ClCompile Include="SoftWareArchitectureDlg.cpp" />
@@ -228,6 +230,7 @@
   </ItemGroup>
   <ItemGroup>
     <Image Include="res\SoftWareArchitecture.ico" />
+    <Image Include="res\timg.bmp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
