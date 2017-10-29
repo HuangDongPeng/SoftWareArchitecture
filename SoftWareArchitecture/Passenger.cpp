@@ -14,3 +14,18 @@ Passenger::Passenger(CString name, CString idCard, type pType, CString studentCa
 Passenger::~Passenger()
 {
 }
+
+bool Passenger::addAPassenger(Passenger & passenger)
+{
+	return false;
+}
+
+bool Passenger::delAPassenger(int index)
+{
+	return false;
+}
+
+bool Passenger::updateAPassenger(int index, Passenger & passenger)
+{
+	return false;
+}

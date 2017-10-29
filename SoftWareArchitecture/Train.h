@@ -1,9 +1,9 @@
-#pragma once
+//Œ¥ µœ÷
 #include <vector>
 using namespace std;
 class Train
 {
-	vector<CString> stations;
+	float price;
 	int restTicketNum;
 	CString trainId;
 public:

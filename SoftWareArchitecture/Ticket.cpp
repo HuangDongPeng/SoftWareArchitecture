@@ -5,6 +5,21 @@ Ticket::Ticket(CString origin, CString destination, CString trainID, CString tim
 {
 }
 
+bool Ticket::buyATicket(Ticket & ticket)
+{
+	return false;
+}
+
+bool Ticket::updateATicket(Ticket & ticket, int index)
+{
+	return false;
+}
+
+bool Ticket::refundATicket(int index)
+{
+	return false;
+}
+
 Ticket::Ticket()
 {
 }

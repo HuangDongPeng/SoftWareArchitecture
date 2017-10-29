@@ -1,4 +1,4 @@
-#pragma once
+//‘›Œ¥ µœ÷
 class PassengerDA
 {
 public:

@@ -25,16 +25,9 @@ public:
 	CString getName() { return name; };
 	CString getPassword() { return password; };
 	CString getIdCard() { return idCard;};
-	CString getTel() { return tel;};
-	static bool signUp(User &user);
-	static bool signIn(CString name, CString password);
-	bool addAPassenger(Passenger &passenger);
-	bool delAPassenger(int index);
-	bool updateAPassenger(int index, Passenger &passenger);
-	bool buyATicket(Ticket &ticket);
-	bool updateATicket(Ticket &ticket, int index);
-	bool refundATicket(int index);
+	CString getTel() { return tel;}
 	static User getUser(CString username);
+	static void addAUser(User aUser);
 };
 
 #endif

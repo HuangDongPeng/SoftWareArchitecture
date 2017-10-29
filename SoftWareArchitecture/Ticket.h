@@ -1,4 +1,4 @@
-#pragma once
+//Œ¥ µœ÷
 class Ticket
 {
 private:
@@ -10,6 +10,9 @@ private:
 	bool isChanged;
 public:
 	Ticket(CString origin, CString destination, CString trainID, CString time,  float price, bool isChanged=false);
+	bool buyATicket(Ticket &ticket);
+	bool updateATicket(Ticket &ticket, int index);
+	bool refundATicket(int index);
 	Ticket();
 	~Ticket();
 };

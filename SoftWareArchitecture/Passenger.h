@@ -16,5 +16,8 @@ public:
 	Passenger();
 	Passenger(CString name, CString idCard, type pType, CString studentCard = _T(""), CString collegeName = _T(""), CString grade = _T(""));
 	~Passenger();
+	bool addAPassenger(Passenger & passenger);
+	bool delAPassenger(int index);
+	bool updateAPassenger(int index, Passenger & passenger);
 };
 

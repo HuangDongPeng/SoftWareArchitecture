@@ -16,36 +16,12 @@ User::~User()
 {
 }
 
-bool User::addAPassenger(Passenger & passenger)
-{
-	return false;
-}
-
-bool User::delAPassenger(int index)
-{
-	return false;
-}
-
-bool User::updateAPassenger(int index, Passenger & passenger)
-{
-	return false;
-}
-
-bool User::buyATicket(Ticket & ticket)
-{
-	return false;
-}
-
-bool User::updateATicket(Ticket & ticket, int index)
-{
-	return false;
-}
-
-bool User::refundATicket(int index)
-{
-	return false;
-}
 
 User User::getUser(CString username) {
 	return UserDA::find(username);
+}
+
+void User::addAUser(User aUser)
+{
+	UserDA::addAUser(aUser);
 }

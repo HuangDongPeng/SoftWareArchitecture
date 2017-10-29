@@ -4,12 +4,12 @@
 
 void UserController::addAUser(User aUser)
 {
-	UserDA::addAUser(aUser);
+	User::addAUser(aUser);
 }
 
 bool UserController::signIn(CString username, CString password)
 {
-	User aUser = UserDA::find(username);
+	User aUser = User::getUser(username);
 	if (aUser.getPassword().IsEmpty())
 		return false;
 	else if (aUser.getPassword() == password)
